@@ -25,7 +25,7 @@ public class ScheduledTasks {
         this.moviesService = moviesService;
     }
 
-    //@Scheduled(fixedDelay = 3 * 60 * 60 * 1000)
+    @Scheduled(fixedDelay = 3 * 60 * 60 * 1000)
     public void getIMdbMovies() {
         RestTemplate restTemplate = new RestTemplate();
         int itemsPerPage = 5;
